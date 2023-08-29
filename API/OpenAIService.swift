@@ -11,7 +11,7 @@ class OpenAIService{
     // URL provided by OpenAI doc
     let baseUrl = "https://api.openai.com/v1/"
     
-    // function to send messsages with reactive nature (Combine)
+    // AnyPublisher is a Publisher implementation to expose/emit values over time
     func sendMesssage(message: String) -> AnyPublisher<OpenAICompletionsResponse, Error> {
         
         // the 'model' and 'max_tokens' are in accordance with OpenAI's doc
